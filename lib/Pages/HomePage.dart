@@ -1,8 +1,11 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import 'package:new_mush_app/Cultivation.dart';
-import 'package:new_mush_app/EdibleMushrooms.dart';
-import 'package:new_mush_app/foraging.dart';
-import 'package:new_mush_app/IdentifyMushrooms.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:new_mush_app/Pages/Cultivation.dart';
+import 'package:new_mush_app/Pages/EdibleMushrooms.dart';
+import 'package:new_mush_app/Pages/foraging.dart';
+import 'package:new_mush_app/Pages/IdentifyMushrooms.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -10,7 +13,9 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) =>
       Scaffold(
+
         appBar: AppBar(
+          backgroundColor: Colors.brown.shade200,
           title: Text('Welcome To Marvellous Mushrooms'),
           centerTitle: true,
         ),
@@ -26,8 +31,8 @@ class HomePage extends StatelessWidget {
               children: [
                 Container(
                   height: 174,
-                  width: 300,
-                  margin: EdgeInsets.all(30),
+                  width: 400,
+                  margin: EdgeInsets.all(20),
                   child: Material(
                     borderRadius: BorderRadius.circular(24),
                     color: Color(0xffD9D9D9),
@@ -37,11 +42,16 @@ class HomePage extends StatelessWidget {
                             left: 20, right: 33, top: 10, bottom: 10),
                           child: Container(
                             child: Text('Marvellous Mushrooms',
+                              style: GoogleFonts.playfairDisplay(textStyle: TextStyle( fontSize: 18, fontWeight: FontWeight.bold)),
+                              textAlign: TextAlign.justify,
                             ),
                           ),
                         ),
+                        SizedBox(
+                          width: 10,
+                        ),
                         Container(
-                          height: 274,
+                          height: 100,
                           width: 100,
                           //margin: EdgeInsets.all(10),
                           child: ClipRRect(
@@ -72,7 +82,7 @@ class HomePage extends StatelessWidget {
                             margin: EdgeInsets.all(20),
                             child: (TextButton (
                             child:  Text("Identify Mushrooms"),
-                              style:  TextButton.styleFrom(
+                              style: TextButton.styleFrom(
                                 textStyle: TextStyle(
                                   fontSize: 15,
                                 ),
