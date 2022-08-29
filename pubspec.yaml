@@ -1,5 +1,5 @@
 name: new_mush_app
-description: A new Flutter project.
+description: A Mobile Resource for Mushroom Enthusiats.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -32,11 +32,16 @@ dependencies:
 
 
 
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   google_fonts: ^3.0.1
   url_launcher: ^6.1.5
+  google_nav_bar: ^5.0.6
+  introduction_screen: ^3.0.2
+
+
 
 dev_dependencies:
   flutter_test:
@@ -60,20 +65,21 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
+  # To add Assets to your application, add an Assets section, like this:
   assets:
     - Assets/images/
-    - Assets/fonts/
-    - Assets/google_fonts/
     - Assets/icons/
-    - Assets/images/edibleImages/
-    - Assets/images/identifyImages/
+    - Assets/images/edible_images/
+    - Assets/images/identify_images/
+    - Assets/images/toxic_images/
+    - Assets/images/onboarding_images/
+    - Assets/images/background_images/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
-  # For details regarding adding assets from package dependencies, see
+  # For details regarding adding Assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
 
   # To add custom fonts to your application, add a fonts section here,
